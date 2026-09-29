@@ -1,18 +1,10 @@
+import tkinter as tk
 
-while True:
-    try:
-        numero = float(input("Escreva um número inteiro: "))
+janela = tk.Tk()
+janela.title("Minha Janela")
+janela.geometry("400x300")
 
-        if numero > 7:
-            print("O número é maior que 7")
+label = tk.Label(janela, text="Olá, mundo!")
+label.pack()
 
-        elif numero < 7:
-            print("O número é menor que 7")
-
-        else:
-            print("O número é igual a 7")
-
-        break
-
-    except ValueError:
-        print("Por favor, digite um número inteiro")
+janela.mainloop()
